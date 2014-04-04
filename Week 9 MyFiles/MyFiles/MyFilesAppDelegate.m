@@ -2,8 +2,8 @@
 //  MyFilesAppDelegate.m
 //  MyFiles
 //
-//  Created by Charles Konkol on 3/25/13.
-//  Copyright (c) 2013 RVC Student. All rights reserved.
+//  Created by Sarah Esunis on 4/3/14.
+//  Copyright (c) 2014 RVC Student. All rights reserved.
 //
 
 #import "MyFilesAppDelegate.h"

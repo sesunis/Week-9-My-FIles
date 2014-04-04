@@ -2,9 +2,8 @@
 //  MyFilesViewController.h
 //  MyFiles
 //
-//  Created by Charles Konkol on 3/25/13.
-//  Copyright (c) 2013 RVC Student. All rights reserved.
-//  Updated October 2013 
+//  Created by Sarah Esunis on 4/3/14.
+//  Copyright (c) 2014 RVC Student. All rights reserved.
 
 #import <UIKit/UIKit.h>
 

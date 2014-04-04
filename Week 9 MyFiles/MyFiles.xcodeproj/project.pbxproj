@@ -19,6 +19,7 @@
 		127247421701159C00DE5441 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127247401701159C00DE5441 /* MainStoryboard.storyboard */; };
 		127247451701159C00DE5441 /* MyFilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 127247441701159C00DE5441 /* MyFilesViewController.m */; };
 		12793F081815AA9400B93E45 /* angrybirds.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12793F061815AA9400B93E45 /* angrybirds.pdf */; };
+		4E3597B618EEAC47004EDFBF /* FileOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3597B518EEAC47004EDFBF /* FileOneViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		127247431701159C00DE5441 /* MyFilesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFilesViewController.h; sourceTree = "<group>"; };
 		127247441701159C00DE5441 /* MyFilesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFilesViewController.m; sourceTree = "<group>"; };
 		12793F071815AA9400B93E45 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = en.lproj/angrybirds.pdf; sourceTree = "<group>"; };
+		4E3597B418EEAC47004EDFBF /* FileOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileOneViewController.h; sourceTree = "<group>"; };
+		4E3597B518EEAC47004EDFBF /* FileOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileOneViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		1272471C1701159C00DE5441 = {
 			isa = PBXGroup;
 			children = (
+				4E3597B318EEAB7D004EDFBF /* Files */,
 				1272472E1701159C00DE5441 /* MyFiles */,
 				127247271701159C00DE5441 /* Frameworks */,
 				127247261701159C00DE5441 /* Products */,
@@ -116,6 +120,15 @@
 			children = (
 			);
 			name = iPad;
+			sourceTree = "<group>";
+		};
+		4E3597B318EEAB7D004EDFBF /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E3597B418EEAC47004EDFBF /* FileOneViewController.h */,
+				4E3597B518EEAC47004EDFBF /* FileOneViewController.m */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +202,7 @@
 				127247351701159C00DE5441 /* main.m in Sources */,
 				127247391701159C00DE5441 /* MyFilesAppDelegate.m in Sources */,
 				127247451701159C00DE5441 /* MyFilesViewController.m in Sources */,
+				4E3597B618EEAC47004EDFBF /* FileOneViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
