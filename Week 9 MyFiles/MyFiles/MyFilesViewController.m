@@ -37,6 +37,15 @@
     [self loadexternalFile];
     
 }
+
+
+
+- (IBAction)btnLocal2:(id)sender {
+ [self loadexternalFile];}
+
+- (IBAction)btnWeb2:(id)sender {
+ [self loadexternalFile];
+}
 - (void)loadlocalFile
 {
     //check if iphone or ipad

@@ -1,18 +1,18 @@
 //
-//  FileOneViewController.m
+//  FileTwoViewController.m
 //  MyFiles
 //
-//  Created by Sarah Esunis on 4/4/14.
+//  Created by Sarah Esunis on 4/10/14.
 //  Copyright (c) 2014 RVC Student. All rights reserved.
 //
 
-#import "FileOneViewController.h"
+#import "FileTwoViewController.h"
 
-@interface FileOneViewController ()
+@interface FileTwoViewController ()
 
 @end
 
-@implementation FileOneViewController
+@implementation FileTwoViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,7 +27,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-[self loadexternalFile];
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,35 +68,35 @@
         //check if iphone or ipad
         if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
             //get screen size
-            //CGSize size = [self getScreenSize];
+            CGSize size = [self getScreenSize];
             
             //set size
-           // UIWebView *webview = [[UIWebView alloc] initWithFrame:CGRectMake(0, 50, size.width, size.height-100)];
+            UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 50, size.width, size.height-100)];
             
-            NSURL *targetURL = [NSURL URLWithString:@"http://esunisbuilders.com/Home.html"];
+            NSURL *targetURL = [NSURL URLWithString:@"http://www.examiner.com/images/blog/EXID19486/images/black-rock-turtles-maui-hawaii-cover.jpg"];
             NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];
-            [self.webview loadRequest:request];
+            [webView loadRequest:request];
             
             //load file in to webview
-           // [self.view addSubview:webView];
-            [self.webview release];
+            [self.view addSubview:webView];
+            [webView release];
             
         }
         
         else {
             //get screen size
-            //CGSize size = [self getScreenSize];
+            CGSize size = [self getScreenSize];
             
             //set size
-            //UIWebView *webview = [[UIWebView alloc] initWithFrame:CGRectMake(0, 50, size.width, size.height-100)];
+            UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 50, size.width, size.height-100)];
             
-            NSURL *targetURL = [NSURL URLWithString:@"http://esunisbuilders.com/Home.html"];
+            NSURL *targetURL = [NSURL URLWithString:@"http://www.examiner.com/images/blog/EXID19486/images/black-rock-turtles-maui-hawaii-cover.jpg"];
             NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];
-            [self.webview loadRequest:request];
+            [webView loadRequest:request];
             
             //load file in to webview
-            //[self.view addSubview:webView];
-            [self.webview release];
+            [self.view addSubview:webView];
+            [webView release];
             
         }
         
@@ -106,7 +105,8 @@
     
     
     
-}- (CGSize)getScreenSize
+}
+- (CGSize)getScreenSize
 {
     //Get Screen size
     CGSize size;

@@ -11,6 +11,9 @@
 @property (retain, nonatomic) IBOutlet UIView *WebView;
 - (IBAction)btnLocal:(id)sender;
 - (IBAction)btnWeb:(id)sender;
+- (IBAction)btnLocal2:(id)sender;
+
+- (IBAction)btnWeb2:(id)sender;
 
 
 @end

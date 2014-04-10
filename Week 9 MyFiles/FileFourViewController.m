@@ -1,18 +1,18 @@
 //
-//  FileOneViewController.m
+//  FileFourViewController.m
 //  MyFiles
 //
-//  Created by Sarah Esunis on 4/4/14.
+//  Created by Sarah Esunis on 4/10/14.
 //  Copyright (c) 2014 RVC Student. All rights reserved.
 //
 
-#import "FileOneViewController.h"
+#import "FileFourViewController.h"
 
-@interface FileOneViewController ()
+@interface FileFourViewController ()
 
 @end
 
-@implementation FileOneViewController
+@implementation FileFourViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,8 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-[self loadexternalFile];
-}
+[self loadexternalFile];}
 
 - (void)didReceiveMemoryWarning
 {
@@ -69,35 +68,35 @@
         //check if iphone or ipad
         if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
             //get screen size
-            //CGSize size = [self getScreenSize];
+            CGSize size = [self getScreenSize];
             
             //set size
-           // UIWebView *webview = [[UIWebView alloc] initWithFrame:CGRectMake(0, 50, size.width, size.height-100)];
+            UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 50, size.width, size.height-100)];
             
-            NSURL *targetURL = [NSURL URLWithString:@"http://esunisbuilders.com/Home.html"];
+            NSURL *targetURL = [NSURL URLWithString:@"https://www.facebook.com/photo.php?fbid=10202557821419405&set=pcb.10202557821899417&type=1&theater"];
             NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];
             [self.webview loadRequest:request];
             
             //load file in to webview
            // [self.view addSubview:webView];
-            [self.webview release];
+            [webView release];
             
         }
         
         else {
             //get screen size
-            //CGSize size = [self getScreenSize];
+            CGSize size = [self getScreenSize];
             
             //set size
-            //UIWebView *webview = [[UIWebView alloc] initWithFrame:CGRectMake(0, 50, size.width, size.height-100)];
+            UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 50, size.width, size.height-100)];
             
-            NSURL *targetURL = [NSURL URLWithString:@"http://esunisbuilders.com/Home.html"];
+            NSURL *targetURL = [NSURL URLWithString:@"https://www.facebook.com/photo.php?fbid=10202557821419405&set=pcb.10202557821899417&type=1&theater"];
             NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];
             [self.webview loadRequest:request];
             
             //load file in to webview
-            //[self.view addSubview:webView];
-            [self.webview release];
+           // [self.view addSubview:webView];
+            [webView release];
             
         }
         
@@ -106,7 +105,9 @@
     
     
     
-}- (CGSize)getScreenSize
+}
+
+- (CGSize)getScreenSize
 {
     //Get Screen size
     CGSize size;

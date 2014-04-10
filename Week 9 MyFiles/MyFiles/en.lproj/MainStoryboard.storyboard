@@ -14,12 +14,12 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" id="4gw-MG-uRs">
-                                <rect key="frame" x="0.0" y="20" width="320" height="506"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="481"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sUy-a2-LTp">
-                                <rect key="frame" x="0.0" y="532" width="98" height="25"/>
+                                <rect key="frame" x="0.0" y="509" width="98" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="Local PDF">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -29,7 +29,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="V0A-5W-1nL">
-                                <rect key="frame" x="106" y="531" width="104" height="26"/>
+                                <rect key="frame" x="106" y="509" width="104" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="External PDF">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -39,13 +39,50 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="4HA-M8-PXh">
-                                <rect key="frame" x="254" y="529" width="30" height="30"/>
+                                <rect key="frame" x="256" y="509" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <state key="normal" title="File">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="r7b-sq-sqj" kind="modal" id="nXd-gI-SIt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eys-na-ee2">
+                                <rect key="frame" x="31" y="532" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Turtle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLocal2:" destination="2" eventType="touchUpInside" id="I2i-h8-vjS"/>
+                                    <action selector="btnWeb:" destination="2" eventType="touchUpInside" id="oeD-ZS-nkM"/>
+                                    <action selector="btnlocal2:" destination="2" eventType="touchUpInside" id="XMg-lW-Q4c"/>
+                                    <segue destination="XDd-ai-Upn" kind="modal" id="q0i-8e-rib"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aqh-2P-S1x">
+                                <rect key="frame" x="127" y="532" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Beach">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnLocal2:" destination="2" eventType="touchUpInside" id="9qE-wS-LBB"/>
+                                    <action selector="btnLocal2::" destination="2" eventType="touchUpInside" id="uA6-pu-9tn"/>
+                                    <action selector="btnWeb2:" destination="2" eventType="touchUpInside" id="DBp-Mk-QZq"/>
+                                    <segue destination="xGC-sl-anR" kind="modal" id="emo-QR-hBr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UUL-Zt-ZoH">
+                                <rect key="frame" x="246" y="532" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="My Joy">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnWeb2:" destination="2" eventType="touchUpInside" id="5J1-d4-Ugm"/>
+                                    <segue destination="8aI-6C-gU4" kind="modal" id="aYl-Xr-Sxl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -57,7 +94,109 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-365" y="-66"/>
+            <point key="canvasLocation" x="-719" y="-419"/>
+        </scene>
+        <!--File Two View Controller-->
+        <scene sceneID="xow-fK-E0q">
+            <objects>
+                <viewController id="XDd-ai-Upn" customClass="FileTwoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4v5-fi-z2d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" id="hqO-DG-P4T">
+                                <rect key="frame" x="0.0" y="20" width="320" height="502"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0n9-jJ-fmQ">
+                                <rect key="frame" x="143" y="530" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2" kind="modal" id="NOr-Vf-W3b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="hqO-DG-P4T" id="uiJ-Tc-rWu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sk2-jr-48d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="-419"/>
+        </scene>
+        <!--File Three View Controller-->
+        <scene sceneID="otc-XJ-x6c">
+            <objects>
+                <viewController id="xGC-sl-anR" customClass="FileThreeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7QG-9U-Jca">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="jR2-8B-tIH">
+                                <rect key="frame" x="149" y="538" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2" kind="modal" id="GZk-yE-qbQ"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" id="pY0-Zi-HEc">
+                                <rect key="frame" x="0.0" y="20" width="332" height="510"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="pY0-Zi-HEc" id="ggf-qH-n7o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BLH-81-oHZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-688" y="312"/>
+        </scene>
+        <!--File Four View Controller-->
+        <scene sceneID="p93-S9-zz9">
+            <objects>
+                <viewController id="8aI-6C-gU4" customClass="FileFourViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hKy-X9-jVy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mHN-6o-4Tx">
+                                <rect key="frame" x="143" y="538" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2" kind="modal" id="ikf-eN-Xrp"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" id="Zm4-ay-3sl">
+                                <rect key="frame" x="0.0" y="20" width="320" height="515"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="Zm4-ay-3sl" id="YtY-rv-kQK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wN7-Xd-aNH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97" y="318"/>
         </scene>
         <!--File One View Controller-->
         <scene sceneID="Kqh-s4-hZZ">
@@ -91,7 +230,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FDr-eZ-eMP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="-66"/>
+            <point key="canvasLocation" x="-328" y="-419"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -99,4 +238,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="NOr-Vf-W3b"/>
+    </inferredMetricsTieBreakers>
 </document>

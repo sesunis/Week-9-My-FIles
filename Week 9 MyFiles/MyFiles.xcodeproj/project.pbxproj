@@ -19,6 +19,9 @@
 		127247421701159C00DE5441 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 127247401701159C00DE5441 /* MainStoryboard.storyboard */; };
 		127247451701159C00DE5441 /* MyFilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 127247441701159C00DE5441 /* MyFilesViewController.m */; };
 		12793F081815AA9400B93E45 /* angrybirds.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 12793F061815AA9400B93E45 /* angrybirds.pdf */; };
+		4E2E3B7818F6A53000C169EC /* FileTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2E3B7718F6A53000C169EC /* FileTwoViewController.m */; };
+		4E2E3B7B18F6A56200C169EC /* FileThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2E3B7A18F6A56200C169EC /* FileThreeViewController.m */; };
+		4E2E3B7E18F6A57B00C169EC /* FileFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E2E3B7D18F6A57B00C169EC /* FileFourViewController.m */; };
 		4E3597B618EEAC47004EDFBF /* FileOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3597B518EEAC47004EDFBF /* FileOneViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +43,12 @@
 		127247431701159C00DE5441 /* MyFilesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFilesViewController.h; sourceTree = "<group>"; };
 		127247441701159C00DE5441 /* MyFilesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFilesViewController.m; sourceTree = "<group>"; };
 		12793F071815AA9400B93E45 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = en; path = en.lproj/angrybirds.pdf; sourceTree = "<group>"; };
+		4E2E3B7618F6A53000C169EC /* FileTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileTwoViewController.h; sourceTree = "<group>"; };
+		4E2E3B7718F6A53000C169EC /* FileTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileTwoViewController.m; sourceTree = "<group>"; };
+		4E2E3B7918F6A56200C169EC /* FileThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileThreeViewController.h; sourceTree = "<group>"; };
+		4E2E3B7A18F6A56200C169EC /* FileThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileThreeViewController.m; sourceTree = "<group>"; };
+		4E2E3B7C18F6A57B00C169EC /* FileFourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileFourViewController.h; sourceTree = "<group>"; };
+		4E2E3B7D18F6A57B00C169EC /* FileFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileFourViewController.m; sourceTree = "<group>"; };
 		4E3597B418EEAC47004EDFBF /* FileOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileOneViewController.h; sourceTree = "<group>"; };
 		4E3597B518EEAC47004EDFBF /* FileOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileOneViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,6 +136,12 @@
 			children = (
 				4E3597B418EEAC47004EDFBF /* FileOneViewController.h */,
 				4E3597B518EEAC47004EDFBF /* FileOneViewController.m */,
+				4E2E3B7618F6A53000C169EC /* FileTwoViewController.h */,
+				4E2E3B7718F6A53000C169EC /* FileTwoViewController.m */,
+				4E2E3B7918F6A56200C169EC /* FileThreeViewController.h */,
+				4E2E3B7A18F6A56200C169EC /* FileThreeViewController.m */,
+				4E2E3B7C18F6A57B00C169EC /* FileFourViewController.h */,
+				4E2E3B7D18F6A57B00C169EC /* FileFourViewController.m */,
 			);
 			name = Files;
 			sourceTree = "<group>";
@@ -200,9 +215,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				127247351701159C00DE5441 /* main.m in Sources */,
+				4E2E3B7E18F6A57B00C169EC /* FileFourViewController.m in Sources */,
 				127247391701159C00DE5441 /* MyFilesAppDelegate.m in Sources */,
 				127247451701159C00DE5441 /* MyFilesViewController.m in Sources */,
 				4E3597B618EEAC47004EDFBF /* FileOneViewController.m in Sources */,
+				4E2E3B7818F6A53000C169EC /* FileTwoViewController.m in Sources */,
+				4E2E3B7B18F6A56200C169EC /* FileThreeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
